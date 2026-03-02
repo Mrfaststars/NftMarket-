@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg,#0f0f14,#1b1b2b);
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  padding: 25px;
+  width: 260px;
+  text-align: center;
+  transition: 0.4s ease;
+  box-shadow: 0 0 40px rgba(0,0,0,0.4);
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+.price {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #00e0ff;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  background: linear-gradient(90deg,#00e0ff,#8a2be2);
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.tg-link {
+  text-decoration: none;
+  color: #00e0ff;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.tg-link:hover {
+  color: #8a2be2;
+}
+
+.payment {
+  max-width: 420px;
+  margin: 80px auto;
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0,0,0,0.4);
+}
+
+.card-number {
+  background: #111;
+  padding: 12px;
+  border-radius: 12px;
+  margin: 15px 0;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.instruction {
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.waiting {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.back {
+  background: #444;
+}

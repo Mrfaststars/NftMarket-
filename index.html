@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NftMarket</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>NftMarket</h1>
+</header>
+
+<div class="container" id="shop">
+
+  <!-- HexPot -->
+  <div class="card">
+    <h2>HexPot</h2>
+    <p class="price">1300 ₽</p>
+    <div class="buttons">
+      <button onclick="buy('HexPot',1300)">Купить</button>
+      <a class="tg-link" href="https://t.me/nft/HexPot-28516" target="_blank">
+        View in Telegram
+      </a>
+    </div>
+  </div>
+
+  <!-- SpicedWine -->
+  <div class="card">
+    <h2>SpicedWine</h2>
+    <p class="price">745 ₽</p>
+    <div class="buttons">
+      <button onclick="buy('SpicedWine',745)">Купить</button>
+      <a class="tg-link" href="https://t.me/nft/SpicedWine-74652" target="_blank">
+        View in Telegram
+      </a>
+    </div>
+  </div>
+
+  <!-- SnoopDogg -->
+  <div class="card">
+    <h2>SnoopDogg</h2>
+    <p class="price">1480 ₽</p>
+    <div class="buttons">
+      <button onclick="buy('SnoopDogg',1480)">Купить</button>
+      <a class="tg-link" href="https://t.me/nft/SnoopDogg-133258" target="_blank">
+        View in Telegram
+      </a>
+    </div>
+  </div>
+
+  <!-- LolPop -->
+  <div class="card">
+    <h2>LolPop</h2>
+    <p class="price">1700 ₽</p>
+    <div class="buttons">
+      <button onclick="buy('LolPop',1700)">Купить</button>
+      <a class="tg-link" href="https://t.me/nft/LolPop-262387" target="_blank">
+        View in Telegram
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Экран оплаты -->
+<div class="payment hidden" id="payment">
+
+  <h2 id="nftName"></h2>
+  <p class="price" id="nftPrice"></p>
+
+  <div class="card-info">
+    Переведите деньги на карту:<br>
+    <div class="card-number">2202 2081 1509 0699</div>
+  </div>
+
+  <div class="instruction">
+    После оплаты напишите любое сообщение <b>relayer</b> в Telegram:<br><br>
+    <a href="https://t.me/NftMarket_relayer" target="_blank">
+      @NftMarket_relayer
+    </a>
+  </div>
+
+  <button onclick="showWaiting()">Я оплатил</button>
+  <button class="back" onclick="goBack()">Назад</button>
+
+  <div class="waiting hidden" id="waitingBox">
+    ⏳ Ожидаем подтверждение оплаты...
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
